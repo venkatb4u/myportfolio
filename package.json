@@ -1,0 +1,11 @@
+{
+  "name": "Stop_Me_If_U_npmCan",
+  "version": "0.0.0",
+  "description": "Node poc",
+  "repository": "",
+  "start": ["server.js"],
+  "author": "Venkat",
+  "dependencies": {
+    "express": "*"
+  }
+}

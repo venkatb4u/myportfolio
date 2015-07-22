@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="{{ngView1Active}}"><a >View</a></li>
+        <li class="{{ngView3Active}}"><a >New</a></li>
+        <li class="{{ngView2Active}}"><a >Edit</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div ng-view></div>
+
+    <hr>
+
+    <footer>
+      <p>Copyrights &copy; 2015. | Developer -  <a href="https://github.com/venkatb4u" target="_blank">Venkat</a>
+    </footer>
+  </div>
+<script data-main="main.js" src="lib/requirejs/require.js"></script>
+</body>
+</html>
